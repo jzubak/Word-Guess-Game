@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+  <body>
+    <div class="background">
+    <h1>Click any key to begin</h1>
+    <br>
+    <br>
+<div id="guess-area"></div>
+    </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+    var matcha = ["m", "a", "t", "c", "h", "a"]
+    var blanks = ["_", "_","_","_","_","_"]
+    // var normcore = ["n", "o", "r", "m", "c", "o", "r", "e"]
+    
+    // var blankspaces = $("guess-area")
+    // $.each(blanks, function(i,blank){
+    //     guess-area.append(blank);
+    // }
+
+    for (i = 0; i < matcha.length; i++) {
+        var guesses = $("<button>");
+    guesses.on('keyup', function() {
+        var letters = $("<div>");
+        $("#display").text($(this)).append(letters);
+        
+        // fridgeMagnet.text($(this).attr('data-letter'));
+
+
+        // remaining guesses = 15
+
+        });
+    });
+
+    </script>
+    
+  </body>
+</html>
